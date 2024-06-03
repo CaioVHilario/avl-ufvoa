@@ -1,0 +1,30 @@
+{
+  "name": "avl-ufvoa",
+  "displayName": "AVL UFVoa",
+  "description": "Extensão para realçar sintaxe de arquivos .avl.",
+  "version": "0.0.1",
+  "publisher": "CaioHilario",
+  "author": {
+    "name": "Caio Hilário",
+    "email": "caio10hilario@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "avl",
+      "aliases": ["AVL Script Geometry", "avl"],
+      "extensions": [".avl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "avl",
+      "scopeName": "source.avl",
+      "path": "./syntaxes/avl.tmLanguage.json"
+    }]
+  }
+}

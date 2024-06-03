@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "AVL Script Geometry",
+	"patterns": [
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments" 
+		},
+		{
+			"include": "#numbers" 
+		},
+		{
+			"include": "#surfaces"
+		},
+		{
+			"include": "#sections"
+		},
+		{
+			"include": "#functionSections"
+		}
+	],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.avl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.avl",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments":	{
+			"name": "comment.line.double-slash.avl",
+			"begin": "#",
+			"beginCaptures": {
+			  "0": {
+				"name": "punctuation.definition.comment.avl"
+			  }
+			},
+			"end": "$",
+			"patterns": []
+		},  
+		"numbers": {
+			"name": "constant.numeric.avl",
+			"match": "\\b\\d+\\b"
+		},
+		"surfaces": {
+			"name": "keyword.module.avl",
+			"match": "\\b(SURFACE)\\b"
+		},
+		"sections": {
+			"name": "storage.type.avl",
+			"match": "\\b(SECTION)\\b"
+		},
+		"functionSections": {
+			"name": "entity.name.function",
+			"match": "\\b(AFIL|CLAF|CDCL|CONTROL|YDUPLICATE|COMPONENT|ANGLE|TRANSLATE)\\b"
+		}
+	},
+	"scopeName": "source.avl"
+}
