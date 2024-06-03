@@ -8,11 +8,25 @@
     "name": "Caio Hilário",
     "email": "caio10hilario@gmail.com"
   },
+  "icon": "image/Logo.png",
   "engines": {
     "vscode": "^1.89.0"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/CaioVHilario/avl-ufvoa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaioVHilario/avl-ufvoa.git"
+  },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "AVL",
+    "Athena Vortex Lattice",
+    "Vortex Lattice Method",
+    "VLM",
+    ".avl"
   ],
   "contributes": {
     "languages": [{

@@ -14,14 +14,7 @@ Esta estensão foi feita por [Caio Hilário](https://github.com/CaioVHilario), e
 
  A extensão basicamente altera cores de números e funções usadas ao escrever a geometria de uma aeronave e possibilita comentar diversas linhas com o atalho de teclado do VScode e deixa o comentário com uma cor apagada, para facilitar a visualização do arquivo.
 
-For example if there is an image subfolder under your extension project workspace
-
-\!\[feature X\]\(images/feature-x.png\)
-
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
+![alt text](image/screen.png)
 
 ### 1.0.0
 
